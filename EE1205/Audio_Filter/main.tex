@@ -62,7 +62,7 @@
 \label{input_sound}
 \item The sound file used for this code is obtained from the below link
 \begin{lstlisting}
-$https://github.com/dhanushnayakh03/EE1205/blob/main/Audio_%20Filter/codes/Dhanush-Singing.wav
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/song.wav
 \end{lstlisting}
 \item 
 \label{Python code}
@@ -109,11 +109,11 @@ Sketch $y(n)$.\\
 Solve\\
 \solution  The C code calculates $y\brak{n}$ and generates values in a text file.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/2.2.c
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/2_2.c
 \end{lstlisting} 
 The following code plots \eqref{prob:2.1} and \eqref{prob:2.2}
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/2.2.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/2.2.py
 \end{lstlisting}
 
 \begin{figure}[H]
@@ -228,7 +228,7 @@ known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The following code plots the magnitude of transfer function.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/3.5.py
+	https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/3.5.py
 \end{lstlisting}
 Substituting $z = e^{j \omega}$ in \eqref{eq:freq_resp}, we get
 \begin{align}
@@ -274,7 +274,7 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \\
 \solution The following code plots $h\brak{n}$ 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.2.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/4.2.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -317,7 +317,7 @@ The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig
 \ref{fig:hn}. 
 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.2.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/4.4.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
@@ -342,7 +342,7 @@ $y(n)$ in  Fig.
 \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.5.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/4.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -387,13 +387,13 @@ y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n
 
 \solution The above three questions are solved using the code below.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/5_sol.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/5_sol.py
 \end{lstlisting}
 
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and IFFT.
 \solution The solution of this question can be found in the code below.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/5.4.py   
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/5.4.py  
 \end{lstlisting}
 This code verifies the result by plotting the obtained result with the result obtained by IDFT.
 \begin{figure}[H]
@@ -440,7 +440,7 @@ where the $\odot$ represents the Hadamard product which performs element-wise mu
 
 The below code computes $y\brak{n}$ by DFT Matrix and then plots it.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/5.5.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/5.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -472,7 +472,7 @@ where the input signal is $x(n)$ and the output signal is $y(n)$ with initial va
 
 \solution The below code gives the output of an Audio Filter without using the built in function signal.lfilter.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.1.py 
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/6.1.py 
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -498,11 +498,11 @@ From \ref{eq:iir_filter_gen}
 \end{align}
 Difference Equation is given by :
 \begin{align}
-	&y(n) - \brak{3.66}y(n - 1) + \brak{5.05}y(n - 2) \nonumber \\
-	&- \brak{3.099}y(n - 3) + \brak{0.715}y(n - 4) \nonumber \\
-	&= \brak{1.45\times 10^{-5}}x(n) + \brak{5.74 \times 10^{-5}}x(n - 1) \nonumber \\
-	&+ \brak{8.62 \times 10^{-5}}x(n - 2) + \brak{5.74 \times 10^{-5}}x(n - 3) \nonumber \\
-	&+ \brak{1.43 \times 10^{-5}}x(n - 4)
+	&y(n) - \brak{3.31}y(n - 1) + \brak{4.17}y(n - 2) \nonumber \\
+	&- \brak{2.357}y(n - 3) + \brak{0.503}y(n - 4) \nonumber \\
+	&= \brak{2.1\times 10^{-4}}x(n) + \brak{8.52 \times 10^{-4}}x(n - 1) \nonumber \\
+	&+ \brak{1.27 \times 10^{-3}}x(n - 2) + \brak{8.52 \times 10^{-4}}x(n - 3) \nonumber \\
+	&+ \brak{2.13 \times 10^{-4}}x(n - 4)
 \end{align}
 From \eqref{eq:iir_filter_gen} 
 \begin{align}
@@ -526,7 +526,7 @@ h(n) &= \sum_{i}r(i)[p(i)]^nu(n) + \sum_{j}k(j)\delta(n - j)
 \end{align}
 The below code computes the values of $r\brak{i},p\brak{i} , k\brak{i}$ and plots $h\brak{n}$
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.2.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/6.2.py
 \end{lstlisting}
 \input{tables/audio_filter_tab}
 
@@ -539,7 +539,7 @@ H(1)&= \sum_{n = 0}^{\infty}h(n)  = \frac{\sum_{k = 0}^{N}b(k)}{\sum_{k = 0}^{M}
 As both $a\brak{k}$ and $b\brak{k}$ are finite length sequences they converge.\\
 The below code plots Filter frequency response
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6_filter_response.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/6_filter_response.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -552,7 +552,7 @@ The below code plots the Butterworth Filter in analog domain by using bilinear t
     z=\frac{1+sT/2}{1-sT/2}
 \end{align}
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/analog_filt.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/analog_filt.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -565,7 +565,7 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/analog
 
 The below code plots the Pole-Zero Plot of the frequency response.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.2_pole-zero.py
+https://github.com/Prabhatkukunuri/Audio_Filtering/blob/main/EE1205/Audio_Filter/codes/6.2_pole-zero.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -581,45 +581,8 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.2_po
 \label{fig:6.2_hn}
 \end{figure}
 
-
-\item Implement your own fft routine in C and call this fft in python.\\
-
-\solution The below C code computes FFT of a given sequence.
-\begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/fft.c
-\end{lstlisting}
-The C function involved in computing the FFT is called in the below python code and the result is computed.\\
-
-Before executing the  python code. Execute the following command.
-\begin{lstlisting}
-gcc -shared -o fft.so -fPIC fft.c
-\end{lstlisting}
-
-\begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/fft_python.py
-\end{lstlisting}
-
-\item Find the time complexities of computing y(n)
-using FFT/IFFT and convolution and Compare.\\
-\solution  The time required to compute y(n) using these two methods is calculated and the data is stored in a text file using the below C code.
-
-\begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.4_time.c
-\end{lstlisting}
-The below python code extracts the data from these text files and plots Time vs $n$ for comparison.
-\begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.4_plot.py
-\end{lstlisting}
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\columnwidth]{figs/Time Complexity Comparision.png}
-\caption{The Complexity of FFT+IFFT method is $ O(nlogn)$ where as by convolution is $O(n^2)$}
-\label{fig:time_complexity}
-\end{figure}
-
-
 \item What is the sampling frequency of the input signal?\\
-\solution The Sampling Frequency is 44.1KHz
+\solution The Sampling Frequency is 48KHz
 \item
 What is type, order and  cutoff-frequency of the above butterworth filter
 \\

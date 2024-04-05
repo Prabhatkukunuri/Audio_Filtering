@@ -7,7 +7,6 @@ input_signal,fs = sf.read('song.wav')
 #sampling frequency of Input signal
 sampl_freq=fs
 
-
 #order of the filter
 order=4
 

@@ -14,18 +14,16 @@ def myfiltfilt(b, a, input_signal):
     return fft.ifft(Y).real
 
 #read .wav file 
-input_signal,fs = sf.read('Dhanush-Singing.wav') 
-print(len(input_signal))
+input_signal,fs = sf.read('song.wav') 
 np.savetxt("in.txt", input_signal)
 
 #sampling frequency of Input signal
 sampl_freq=fs
-
 #order of the filter
 order=4   
 
 #cutoff frquency 
-cutoff_freq=1000.0  
+cutoff_freq=2000.0  
 
 #digital frequency
 Wn=2*cutoff_freq/sampl_freq  
